@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.container{
+  display: flex;
+  max-height: 600px;
+  max-width: 800px;
+  border: 2px solid #696969;
+  flex-direction: column;
+}
+
+/*  header  */
+
+.container-header{
+  padding: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #696969;
+  background-color: #AFEEEE;
+}
+.topic{
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+.topic h2{
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+.close{
+  font-size: 20px;
+  cursor: pointer;
+}
+.created{
+  display: flex;
+}
+.created p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+.created p > span a{
+  color: black;
+  text-decoration: underline;
+}
+.created p > span a:hover{
+  text-decoration: none;
+}
+.created p:first-child{
+  margin-right: 10px;
+}
+
+/*  messages container  */
+
+.messages-container{
+  background-color: #ADD8E6;
+  padding: 10px 0;
+  display: block;
+  overflow-y: scroll;
+  width: 796px;
+  height: 530px;
+}
+.message{
+  display: flex;
+  padding: 0 10px;
+}
+.message:hover{
+  background-color: #B0E0E6;
+}
+.profile-block{
+  padding-right: 5px;
+  display: flex;
+  max-width: 150px;
+}
+.avatar{
+  align-self: center;
+  margin-right: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #696969;
+  background-color: #AFEEEE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #696969;
+  text-align: center;
+  cursor: pointer;
+}
+.date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+.message-block{
+  padding: 20px 0;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #696969;
+}
+.member-name{
+  align-self: flex-start;
+  font-family: 'Raleway', sans-serif;
+  color: #696969;
+  font-weight: 600;
+  cursor: pointer;
+}
+.message-text{
+  padding: 5px;
+  border: 2px solid #696969;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #B0E0E6;
+}
