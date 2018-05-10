@@ -17,19 +17,11 @@ body{
 /*  header  */
 
 .container-header{
-  padding: 10px;
+  position: relative;
+  padding: 0 10px;
   height: 70px;
-  display: flex;
-  justify-content: space-between;
   border-bottom: 2px solid #696969;
   background-color: #AFEEEE;
-}
-.topic{
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
 }
 .topic h2{
   font-size: 25px;
@@ -38,6 +30,9 @@ body{
   margin: 0;
 }
 .close{
+  top: 0;
+  right: 5px;
+  position: absolute;
   font-size: 20px;
   cursor: pointer;
 }
@@ -78,12 +73,12 @@ body{
   background-color: #B0E0E6;
 }
 .profile-block{
+  align-items: center;
   padding-right: 5px;
   display: flex;
   max-width: 150px;
 }
 .avatar{
-  align-self: center;
   margin-right: 5px;
   height: 50px;
   width: 50px;
@@ -105,6 +100,7 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 .message-block{
+  width: 100%;
   padding: 20px 0;
   padding-left: 10px;
   display: flex;
